@@ -3,11 +3,14 @@ package com.core.controllers;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.layout.Pane;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -66,5 +69,12 @@ public class Settings implements Initializable{
                     }
                 }
         );
+
+        try {
+            Parent rooter = FXMLLoader.load(getClass().getClassLoader().getResource("kyorugui_configuration.fxml"));
+            paneContent.getChildren().add(rooter);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
