@@ -1,5 +1,7 @@
 package com.core.controllers;
 
+import com.handlers.SettingsHandler;
+import com.handlers.SettingsMenu;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -9,8 +11,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
@@ -70,6 +72,8 @@ public class Settings implements Initializable{
 
         treeView.setRoot(root);
         root.setExpanded(true);
+
+        treeView.addEventHandler(MouseEvent.MOUSE_CLICKED, new SettingsHandler());
     }
 
     private void populateData(){
