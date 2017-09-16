@@ -56,11 +56,11 @@
 #PoStackPane{
     -fx-background-color:
             linear-gradient(#37aafc, #00b9fc),
-            radial-gradient(center 50% -40%, radius 270%, #cfd5f9 45%, #0072ff 50%);
+            radial-gradient(center 50% -40%, radius 270%, #eff1fc 45%, #b3d3fc 50%);
 }
 
 #kyStackPane{
     -fx-background-color:
                 linear-gradient(#37aafc, #00b9fc),
-                radial-gradient(center 50% -40%, radius 270%, #ed6f7e 45%, #e02828 50%);
+                radial-gradient(center 50% -40%, radius 270%, #fff7f8 45%, #fc2d2d 50%);
 }
