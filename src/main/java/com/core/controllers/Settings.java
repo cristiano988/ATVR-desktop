@@ -1,14 +1,14 @@
 package com.core.controllers;
 
-import com.handlers.SettingsHandler;
-import com.handlers.SettingsMenu;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.TreeCell;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.image.ImageView;
@@ -73,26 +73,10 @@ public class Settings implements Initializable{
         treeView.setRoot(root);
         root.setExpanded(true);
 
-        treeView.addEventHandler(MouseEvent.MOUSE_CLICKED, new SettingsHandler());
+        treeView.getSelectionModel().selectedItemProperty().addListener(treeHandler);
     }
 
     private void populateData(){
-
-        //root.setExpanded(true);
-
-        //treeView.setRoot(root);
-
-        treeView.getSelectionModel().selectedItemProperty().addListener(
-
-                new ChangeListener<TreeItem<String>>() {
-                    @Override
-                    public void changed(ObservableValue<? extends TreeItem<String>> observableValue,
-                                        TreeItem<String> stringTreeItem, TreeItem<String> t1)
-                    {
-
-                    }
-                }
-        );
 
         try {
             Parent rooter = FXMLLoader.load(getClass().getClassLoader().getResource("kyorugui_configuration.fxml"));
@@ -101,4 +85,11 @@ public class Settings implements Initializable{
             e.printStackTrace();
         }
     }
+
+    private ChangeListener<TreeItem<String>> treeHandler = (observableValue, stringTreeItem, t1) -> {
+        if(t1.getValue().equalsIgnoreCase("kyorugui"))
+        {
+            populateData();
+        }
+    };
 }
