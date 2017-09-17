@@ -1,5 +1,6 @@
 package com.core.controllers;
 
+import com.handlers.SettingsMenu;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.EventHandler;
@@ -57,6 +58,7 @@ public class Settings implements Initializable{
         TreeItem<String> poomsae = new TreeItem<>("Poomsae",poom);
 
         tournament.getChildren().addAll(kyorugui,poomsae);
+        tournament.setExpanded(true);
 
         /** Devices Configurations */
         Node device = new ImageView(getClass().getClassLoader().getResource("multimedia/images/tkd/tkd-devices.png").toURI().toString());
@@ -65,8 +67,11 @@ public class Settings implements Initializable{
         /** Synchronization  */
         Node sync = new ImageView(getClass().getClassLoader().getResource("multimedia/images/tkd/tkd-network.png").toURI().toString());
         TreeItem<String> synchronization = new TreeItem<>("Synchronization",sync);
+        /** Device Configuration */
+        TreeItem<String> deviceConfiguration = new TreeItem<>("Configuration");
 
-        devices.getChildren().addAll(synchronization);
+        devices.getChildren().addAll(synchronization,deviceConfiguration);
+        devices.setExpanded(true);
 
         root.getChildren().addAll(tournament, devices);
 
@@ -76,10 +81,13 @@ public class Settings implements Initializable{
         treeView.getSelectionModel().selectedItemProperty().addListener(treeHandler);
     }
 
-    private void populateData(){
+    private void populateData(String name){
 
+        URL path = getClass().getClassLoader().getResource(name);
+        if(path == null)return;
         try {
-            Parent rooter = FXMLLoader.load(getClass().getClassLoader().getResource("kyorugui_configuration.fxml"));
+            Parent rooter = FXMLLoader.load(path);
+            paneContent.getChildren().clear();
             paneContent.getChildren().add(rooter);
         } catch (IOException e) {
             e.printStackTrace();
@@ -87,9 +95,14 @@ public class Settings implements Initializable{
     }
 
     private ChangeListener<TreeItem<String>> treeHandler = (observableValue, stringTreeItem, t1) -> {
-        if(t1.getValue().equalsIgnoreCase("kyorugui"))
-        {
-            populateData();
-        }
+        if(t1.getValue() != null)
+            handdleButton(t1.getValue());
     };
+
+    private void handdleButton(String button)
+    {
+        SettingsMenu menuClicked = SettingsMenu.getForValue(button);
+        if(menuClicked != null && menuClicked.getMenuName() != null)
+            populateData(menuClicked.getMenuName());
+    }
 }
