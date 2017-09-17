@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <center>
@@ -44,18 +44,69 @@
                   <Insets top="40.0" />
                </VBox.margin>
             </Label>
-            <HBox>
+            <HBox alignment="CENTER_LEFT">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
                <children>
-                  <Label text="Punch to chest points:" />
-                  <TextField>
+                  <Label text="Punch points:" />
+                  <TextField prefWidth="60.0">
                      <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="40.0" />
                      </HBox.margin>
                   </TextField>
                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Chest front kick:" />
+                  <TextField prefWidth="60.0">
+                     <HBox.margin>
+                        <Insets left="22.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Chest back kick:" />
+                  <TextField prefWidth="60.0">
+                     <HBox.margin>
+                        <Insets left="22.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Head front kick:" />
+                  <TextField prefWidth="60.0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Head back kick:" />
+                  <TextField prefWidth="60.0">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
             </HBox>
          </children>
          <BorderPane.margin>
@@ -73,4 +124,11 @@
          </BorderPane.margin>
       </Label>
    </top>
+   <bottom>
+      <VBox alignment="BOTTOM_CENTER" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </bottom>
 </BorderPane>
