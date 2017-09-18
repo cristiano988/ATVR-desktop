@@ -22,7 +22,7 @@ public enum SettingsMenu {
     POOMSAE(3) {
         @Override
         public String getMenuName() {
-            return null;
+            return "poomsae_configuration.fxml";
         }
     },
     DEVICES(4) {
@@ -40,7 +40,7 @@ public enum SettingsMenu {
     SYNCHRONIZATION(6) {
         @Override
         public String getMenuName() {
-            return null;
+            return "devices_synchronization.fxml";
         }
     };
 

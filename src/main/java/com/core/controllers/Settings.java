@@ -68,7 +68,8 @@ public class Settings implements Initializable{
         Node sync = new ImageView(getClass().getClassLoader().getResource("multimedia/images/tkd/tkd-network.png").toURI().toString());
         TreeItem<String> synchronization = new TreeItem<>("Synchronization",sync);
         /** Device Configuration */
-        TreeItem<String> deviceConfiguration = new TreeItem<>("Configuration");
+        Node deviceConf = new ImageView(getClass().getClassLoader().getResource("multimedia/images/tkd/tkd-conf-dev.png").toURI().toString());
+        TreeItem<String> deviceConfiguration = new TreeItem<>("Configuration",deviceConf);
 
         devices.getChildren().addAll(synchronization,deviceConfiguration);
         devices.setExpanded(true);
