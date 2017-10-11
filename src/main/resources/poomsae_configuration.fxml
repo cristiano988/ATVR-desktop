@@ -25,37 +25,6 @@
          <children>
             <HBox alignment="CENTER_LEFT">
                <children>
-                  <Label text="Referees" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT">
-               <padding>
-                  <Insets top="20.0" />
-               </padding>
-               <children>
-                  <Label text="Competition areas:" />
-                  <TextField prefWidth="60.0">
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-               <children>
-                  <Label text="Referres per area:" />
-                  <TextField prefWidth="60.0">
-                     <HBox.margin>
-                        <Insets left="26.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT">
-               <children>
                   <Label text="Type:" />
                   <ComboBox prefWidth="150.0">
                      <HBox.margin>
