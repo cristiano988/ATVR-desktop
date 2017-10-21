@@ -1,11 +1,20 @@
 package com.core.controllers;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,10 +25,26 @@ public class Competition implements Initializable {
     @FXML private ImageView imageViewPo;
     @FXML private StackPane kyStackPane;
     @FXML private StackPane PoStackPane;
+    @FXML private MenuItem configurationBtn;
 
+    private Stage stage = null;
 
     public Competition(){
 
+    }
+
+    public Competition(Stage stage){
+        this.stage = stage;
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("competition.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        stage.setScene(new Scene(root));
+        stage.setMaximized(true);
+        stage.show();
     }
 
     @Override
@@ -33,5 +58,14 @@ public class Competition implements Initializable {
 
         kyStackPane.getStylesheets().add(getClass().getClassLoader().getResource("style/base.css").toString());
         PoStackPane.getStylesheets().add(getClass().getClassLoader().getResource("style/base.css").toString());
+
+        configurationBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                System.out.println("ok");
+            }
+        });
+
     }
+
 }
