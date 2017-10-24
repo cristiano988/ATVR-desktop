@@ -20,7 +20,6 @@
 .label {
     -fx-font-family: 'Noto Mono';
     -fx-font-size: 15pt;
-    -fx-font-style: bold;
     -fx-text-fill: black;
 }
 

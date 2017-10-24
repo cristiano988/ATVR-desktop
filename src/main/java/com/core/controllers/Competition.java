@@ -10,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -62,7 +61,16 @@ public class Competition implements Initializable {
         configurationBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                System.out.println("ok");
+                Stage stage = new Stage();
+                Parent settings = null;
+                try {
+                    settings = FXMLLoader.load(getClass().getClassLoader().getResource("settings.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                stage.setScene(new Scene(settings,800,600));
+                stage.setAlwaysOnTop(true);
+                stage.show();
             }
         });
 
