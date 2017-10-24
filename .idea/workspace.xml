@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java" afterPath="$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/core/controllers/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/com/core/controllers/Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/competition.fxml" afterPath="$PROJECT_DIR$/src/main/resources/competition.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/devices_configuration.fxml" afterPath="$PROJECT_DIR$/src/main/resources/devices_configuration.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/devices_synchronization.fxml" afterPath="$PROJECT_DIR$/src/main/resources/devices_synchronization.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/style/base.css" afterPath="$PROJECT_DIR$/src/main/resources/style/base.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,67 +78,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="competition.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/competition.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
-              <folding>
-                <marker date="1508885292423" expanded="true" signature="4802:4856" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="4802:4896" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5066:5199" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5407:10358" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5432:10341" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5499:10315" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5531:10284" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5694:5863" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5740:5851" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5913:8843" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="5951:8811" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6007:6877" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6051:6715" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6174:6356" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6227:6348" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6490:6670" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6543:6661" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6762:6870" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6933:7853" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="6977:7648" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7103:7285" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7156:7277" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7423:7603" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7476:7594" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7695:7815" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7909:8772" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="7953:8580" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8036:8218" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8089:8210" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8355:8535" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8408:8526" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8627:8734" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8934:10251" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="8972:10219" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9034:10180" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9078:10142" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9279:9512" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9332:9466" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9691:10097" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9744:9889" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="9943:10051" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10413:11084" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10459:11074" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10475:11057" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10528:10651" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10548:10633" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10704:10864" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10724:10846" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10917:11040" ph="..." />
-                <marker date="1508885292423" expanded="true" signature="10937:11022" ph="..." />
-              </folding>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="107" />
+              <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        </entry>
+      </file>
+      <file leaf-file-name="competition.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/competition.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="163" column="70" lean-forward="false" selection-start-line="163" selection-start-column="61" selection-end-line="163" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Competition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="68" column="11" lean-forward="false" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2183#2184#0" expanded="true" />
+                <element signature="e#2229#2230#0" expanded="true" />
+                <element signature="e#2590#2591#0" expanded="true" />
+                <element signature="e#2636#2637#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -176,6 +145,9 @@
       <find>pane</find>
       <find>contro</find>
       <find>menui</find>
+      <find>blue</find>
+      <find>configu</find>
+      <find>conf</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -215,11 +187,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/core/controllers/MainController.java" />
         <option value="$APPLICATION_HOME_DIR$/jre64/lib/ext/jfxrt.jar!/javafx/event/ActionEvent.class" />
         <option value="$PROJECT_DIR$/src/main/resources/style/base.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/core/controllers/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/resources/devices_synchronization.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/devices_configuration.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/competition.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java" />
       </list>
     </option>
   </component>
@@ -278,8 +250,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,7 +397,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -889,7 +861,8 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1508796334874" duration="233000" />
       <workItem from="1508796594914" duration="3908000" />
-      <workItem from="1508882843730" duration="2377000" />
+      <workItem from="1508882843730" duration="2669000" />
+      <workItem from="1508885594128" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 2">
       <created>1502920990467</created>
@@ -982,11 +955,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507846869797</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Improved Views">
+      <created>1508885359442</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508885359442</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7820000" />
+    <option name="totallyTimeSpent" value="9514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1007,7 +987,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25642964" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2602118" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1329,45 +1309,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/multimedia/images/tkd/tkd-devices.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/devices_synchronization.fxml">
@@ -1404,66 +1355,45 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/competition.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
-          <folding>
-            <marker date="1508885292423" expanded="true" signature="4802:4856" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="4802:4896" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5066:5199" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5407:10358" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5432:10341" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5499:10315" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5531:10284" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5694:5863" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5740:5851" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5913:8843" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="5951:8811" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6007:6877" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6051:6715" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6174:6356" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6227:6348" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6490:6670" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6543:6661" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6762:6870" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6933:7853" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="6977:7648" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7103:7285" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7156:7277" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7423:7603" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7476:7594" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7695:7815" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7909:8772" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="7953:8580" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8036:8218" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8089:8210" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8355:8535" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8408:8526" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8627:8734" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8934:10251" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="8972:10219" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9034:10180" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9078:10142" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9279:9512" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9332:9466" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9691:10097" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9744:9889" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="9943:10051" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10413:11084" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10459:11074" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10475:11057" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10528:10651" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10548:10633" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10704:10864" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10724:10846" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10917:11040" ph="..." />
-            <marker date="1508885292423" expanded="true" signature="10937:11022" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/style/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/competition.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="163" column="70" lean-forward="false" selection-start-line="163" selection-start-column="61" selection-end-line="163" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/core/controllers/Competition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="68" column="11" lean-forward="false" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -25,6 +26,8 @@ public class Competition implements Initializable {
     @FXML private StackPane kyStackPane;
     @FXML private StackPane PoStackPane;
     @FXML private MenuItem configurationBtn;
+    @FXML private Button poBtnConf;
+    @FXML private Button btnConfKy;
 
     private Stage stage = null;
 
@@ -58,22 +61,40 @@ public class Competition implements Initializable {
         kyStackPane.getStylesheets().add(getClass().getClassLoader().getResource("style/base.css").toString());
         PoStackPane.getStylesheets().add(getClass().getClassLoader().getResource("style/base.css").toString());
 
-        configurationBtn.setOnAction(new EventHandler<ActionEvent>() {
+        btnConfKy.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent actionEvent) {
-                Stage stage = new Stage();
-                Parent settings = null;
-                try {
-                    settings = FXMLLoader.load(getClass().getClassLoader().getResource("settings.fxml"));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                stage.setScene(new Scene(settings,800,600));
-                stage.setAlwaysOnTop(true);
-                stage.show();
+            public void handle(ActionEvent event) {
+                loadSettings();
             }
         });
 
+        poBtnConf.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                loadSettings();
+            }
+        });
+
+        configurationBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                loadSettings();
+            }
+        });
+
+    }
+
+    private void loadSettings(){
+        Stage stage = new Stage();
+        Parent settings = null;
+        try {
+            settings = FXMLLoader.load(getClass().getClassLoader().getResource("settings.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        stage.setScene(new Scene(settings,800,600));
+        stage.setAlwaysOnTop(true);
+        stage.show();
     }
 
 }
