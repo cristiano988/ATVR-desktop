@@ -93,10 +93,10 @@ public class Settings implements Initializable{
 
     private ChangeListener<TreeItem<String>> treeHandler = (observableValue, stringTreeItem, t1) -> {
         if(t1.getValue() != null)
-            handdleButton(t1.getValue());
+            handleButton(t1.getValue());
     };
 
-    private void handdleButton(String button)
+    private void handleButton(String button)
     {
         SettingsMenu menuClicked = SettingsMenu.getForValue(button);
         if(menuClicked != null && menuClicked.getMenuName() != null)

@@ -28,6 +28,8 @@ public class Competition implements Initializable {
     @FXML private MenuItem configurationBtn;
     @FXML private Button poBtnConf;
     @FXML private Button btnConfKy;
+    @FXML private Button btnAddTeamK;
+    @FXML private Button btnAddTeamP;
 
     private Stage stage = null;
 
@@ -82,6 +84,20 @@ public class Competition implements Initializable {
             }
         });
 
+        btnAddTeamK.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                addTeam();
+            }
+        });
+
+        btnAddTeamP.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                addTeam();
+            }
+        });
+
     }
 
     private void loadSettings(){
@@ -93,6 +109,19 @@ public class Competition implements Initializable {
             e.printStackTrace();
         }
         stage.setScene(new Scene(settings,800,600));
+        stage.setAlwaysOnTop(true);
+        stage.show();
+    }
+
+    private void addTeam(){
+        Stage stage = new Stage();
+        Parent addTeam = null;
+        try {
+            addTeam = FXMLLoader.load(getClass().getClassLoader().getResource("add_team.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        stage.setScene(new Scene(addTeam,800,600));
         stage.setAlwaysOnTop(true);
         stage.show();
     }

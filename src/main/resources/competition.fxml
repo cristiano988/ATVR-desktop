@@ -36,7 +36,7 @@
                                           <Insets bottom="10.0" />
                                        </VBox.margin></Label>
                                     <ListView />
-                                    <Button mnemonicParsing="false" text="Add Team">
+                                    <Button mnemonicParsing="false" text="Add Team" fx:id="btnAddTeamP">
                                        <VBox.margin>
                                           <Insets top="10.0" />
                                        </VBox.margin></Button>
@@ -115,7 +115,7 @@
                                           <Insets bottom="10.0" />
                                        </VBox.margin></Label>
                                     <ListView />
-                                    <Button mnemonicParsing="false" text="Add Team">
+                                    <Button mnemonicParsing="false" text="Add Team" fx:id="btnAddTeamK">
                                        <VBox.margin>
                                           <Insets top="10.0" />
                                        </VBox.margin></Button>
