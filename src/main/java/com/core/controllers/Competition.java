@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -30,6 +31,10 @@ public class Competition implements Initializable {
     @FXML private Button btnConfKy;
     @FXML private Button btnAddTeamK;
     @FXML private Button btnAddTeamP;
+    @FXML private Button btnAddCategoryP;
+    @FXML private Button btnAddCategoryK;
+    @FXML private Button poBtnStart;
+    @FXML private  Button kyBtnStart;
 
     private Stage stage = null;
 
@@ -98,6 +103,34 @@ public class Competition implements Initializable {
             }
         });
 
+        btnAddCategoryP.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("kjbkjb kja");
+            }
+        });
+
+        btnAddCategoryK.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("kjbkjb kja");
+            }
+        });
+
+        poBtnStart.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                addTeam();
+            }
+        });
+
+        kyBtnStart.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                fight();
+            }
+        });
+
     }
 
     private void loadSettings(){
@@ -118,6 +151,19 @@ public class Competition implements Initializable {
         Parent addTeam = null;
         try {
             addTeam = FXMLLoader.load(getClass().getClassLoader().getResource("add_team.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        stage.setScene(new Scene(addTeam,800,600));
+        stage.setAlwaysOnTop(true);
+        stage.show();
+    }
+
+    private void fight(){
+        Stage stage = new Stage();
+        Parent addTeam = null;
+        try {
+            addTeam = FXMLLoader.load(getClass().getClassLoader().getResource("fight.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
